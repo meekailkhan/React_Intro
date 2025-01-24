@@ -9,6 +9,11 @@ function Counter() {
         let newCounter = count + 1
         counterIncrement(newCounter)
       }}>Increase</button>
+    <button onClick={()=>{
+        let resetCounter = 0
+        counterIncrement(resetCounter)
+      }}>Restart</button>
+     
     </div>
   )
 }
