@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import ParentCompnent from './components/ParentCompnent';
+import UserGreeting from './components/UserGreeting';
+// import ParentCompnent from './components/ParentCompnent';
 // import FunctionClick from './components/FunctionClick';
 // import Counter from './components/Counter';
 // import Greet from './components/Greet';
@@ -22,8 +23,8 @@ function App() {
       <Hello name="arbaaz"><button>this child btn</button></Hello>
       <Hello name="mahir"><pre>this is another child</pre></Hello> */}
       {/* <FunctionClick/> */}
-
-      <ParentCompnent/>
+      {/* <ParentCompnent/> */}
+      <UserGreeting/>
 
     </div>
   );
