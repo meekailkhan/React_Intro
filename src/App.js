@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-import UserGreeting from './components/UserGreeting';
+import NamList from './components/NamList';
+// import UserGreeting from './components/UserGreeting';
 // import ParentCompnent from './components/ParentCompnent';
 // import FunctionClick from './components/FunctionClick';
 // import Counter from './components/Counter';
@@ -24,7 +25,9 @@ function App() {
       <Hello name="mahir"><pre>this is another child</pre></Hello> */}
       {/* <FunctionClick/> */}
       {/* <ParentCompnent/> */}
-      <UserGreeting/>
+      {/* <UserGreeting/> */}
+
+      <NamList />
 
     </div>
   );
