@@ -7,7 +7,7 @@ import React from 'react';
 const Greet = (props) => {
     const {firstName,lastName} = props
     return (
-        <h1>{firstName}_{lastName}</h1>
+        <h1 >{firstName}_{lastName}</h1>
     )
 }
 
