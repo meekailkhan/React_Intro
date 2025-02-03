@@ -38,8 +38,8 @@ function App() {
       {/* <Stylesheet primary={true}/> */}
       {/* <Inline /> */}
 
-      {/* <h1 className='error'>Error</h1>
-      <h1 className={`${success} ${font_xl}`}>Success</h1> */}
+      <h1 className='error'>Error</h1>
+      <h1 className={`${success} ${font_xl}`}>Success</h1>
       <FormControll />
 
     </div>
