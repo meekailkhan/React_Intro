@@ -2,6 +2,7 @@
 import './App.css';
 import DemoFragment from './components/DemoFragment';
 import FormControll from './components/FormControll';
+import PureParent from './components/PureParent';
 import Table from './components/Table';
 // import NamList from './components/NamList';
 // import UserGreeting from './components/UserGreeting';
@@ -46,6 +47,8 @@ function App() {
 
       {/* <DemoFragment /> */}
       <Table />
+
+      {/* <PureParent /> */}
 
     </div>
   );
