@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
+import DemoFragment from './components/DemoFragment';
 import FormControll from './components/FormControll';
+import Table from './components/Table';
 // import NamList from './components/NamList';
 // import UserGreeting from './components/UserGreeting';
 // import ParentCompnent from './components/ParentCompnent';
@@ -13,9 +15,9 @@ import FormControll from './components/FormControll';
 // import Hello from './components/hello';
 // import Message from './components/Message';
 
-import './myStyle.css'
-import style from './myStyle.module.css'
-const {success,font_xl} = style
+// import './myStyle.css'
+// import style from './myStyle.module.css'
+// const {success,font_xl} = style
 
 
 function App() {
@@ -37,10 +39,13 @@ function App() {
       {/* <NamList /> */}
       {/* <Stylesheet primary={true}/> */}
       {/* <Inline /> */}
-
+{/* 
       <h1 className='error'>Error</h1>
-      <h1 className={`${success} ${font_xl}`}>Success</h1>
-      <FormControll />
+      <h1 className={`${success} ${font_xl}`}>Success</h1> */}
+      {/* <FormControll /> */}
+
+      {/* <DemoFragment /> */}
+      <Table />
 
     </div>
   );
