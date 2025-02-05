@@ -1,12 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
 import ClickCounter from './components/ClickCounter';
+import ClickTwoCounter from './components/ClickTwoCounter';
 import DemoFragment from './components/DemoFragment';
 import FormControll from './components/FormControll';
 import HoverCounter from './components/HoverCounter';
+import HoverTwoCounter from './components/HoverTwoCounter';
 import PortalDemo from './components/PortalDemo';
+import PropsCounter from './components/PropsCounter';
 import PureParent from './components/PureParent';
 import Table from './components/Table';
+import User from './components/User';
 // import NamList from './components/NamList';
 // import UserGreeting from './components/UserGreeting';
 // import ParentCompnent from './components/ParentCompnent';
@@ -43,7 +47,7 @@ function App() {
       {/* <NamList /> */}
       {/* <Stylesheet primary={true}/> */}
       {/* <Inline /> */}
-{/* 
+      {/* 
       <h1 className='error'>Error</h1>
       <h1 className={`${success} ${font_xl}`}>Success</h1> */}
       {/* <FormControll /> */}
@@ -53,8 +57,19 @@ function App() {
       {/* <PortalDemo />       */}
       {/* <PureParent /> */}
 
-      <ClickCounter />
-      <HoverCounter />
+      {/* <ClickCounter />
+      <HoverCounter /> */}
+
+      {/* <ClickTwoCounter />
+      <HoverTwoCounter />
+      <User isLoggedIn={(isLoggedIn)=> isLoggedIn ? 'meekail' : 'guest'}/> */}
+      <PropsCounter render={(count, incrementCounter) => {
+        return <ClickTwoCounter count={count} incrementCounter={incrementCounter} />
+      }} />
+
+      <PropsCounter render={(count, incrementCounter) => {
+        return <HoverTwoCounter count={count} incrementCounter={incrementCounter} />
+      }} />
 
     </div>
   );
