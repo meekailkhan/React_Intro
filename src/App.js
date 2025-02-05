@@ -1,7 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
+import ClickCounter from './components/ClickCounter';
 import DemoFragment from './components/DemoFragment';
 import FormControll from './components/FormControll';
+import HoverCounter from './components/HoverCounter';
+import PortalDemo from './components/PortalDemo';
 import PureParent from './components/PureParent';
 import Table from './components/Table';
 // import NamList from './components/NamList';
@@ -46,9 +49,12 @@ function App() {
       {/* <FormControll /> */}
 
       {/* <DemoFragment /> */}
-      <Table />
-
+      {/* <Table /> */}
+      {/* <PortalDemo />       */}
       {/* <PureParent /> */}
+
+      <ClickCounter />
+      <HoverCounter />
 
     </div>
   );
