@@ -5,6 +5,9 @@ import ClickTwoCounter from './components/ClickTwoCounter';
 import ComponentC from './components/ComponentC';
 import DemoFragment from './components/DemoFragment';
 import FormControll from './components/FormControll';
+import HooksCounter from './components/HooksCounter';
+import HooksCounterThree from './components/HooksCounterThree';
+import HooksCounterTwo from './components/HooksCounterTwo';
 import HoverCounter from './components/HoverCounter';
 import HoverTwoCounter from './components/HoverTwoCounter';
 import PortalDemo from './components/PortalDemo';
@@ -74,9 +77,14 @@ function App() {
         return <HoverTwoCounter count={count} incrementCounter={incrementCounter} />
       }} /> */}
 
-      <UserProvider value='meekail'>
+      {/* <UserProvider value='meekail'>
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
+
+      {/* <HooksCounter /> */}
+      {/* <HooksCounterTwo /> */}
+
+      <HooksCounterThree />
 
     </div>
   );
