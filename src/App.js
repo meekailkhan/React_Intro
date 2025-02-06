@@ -2,6 +2,7 @@
 import './App.css';
 import ClickCounter from './components/ClickCounter';
 import ClickTwoCounter from './components/ClickTwoCounter';
+import ComponentC from './components/ComponentC';
 import DemoFragment from './components/DemoFragment';
 import FormControll from './components/FormControll';
 import HoverCounter from './components/HoverCounter';
@@ -11,6 +12,7 @@ import PropsCounter from './components/PropsCounter';
 import PureParent from './components/PureParent';
 import Table from './components/Table';
 import User from './components/User';
+import { UserProvider } from './components/UserContext';
 // import NamList from './components/NamList';
 // import UserGreeting from './components/UserGreeting';
 // import ParentCompnent from './components/ParentCompnent';
@@ -63,13 +65,18 @@ function App() {
       {/* <ClickTwoCounter />
       <HoverTwoCounter />
       <User isLoggedIn={(isLoggedIn)=> isLoggedIn ? 'meekail' : 'guest'}/> */}
+{/*       
       <PropsCounter render={(count, incrementCounter) => {
         return <ClickTwoCounter count={count} incrementCounter={incrementCounter} />
-      }} />
+      }} /> */}
 
-      <PropsCounter render={(count, incrementCounter) => {
+      {/* <PropsCounter render={(count, incrementCounter) => {
         return <HoverTwoCounter count={count} incrementCounter={incrementCounter} />
-      }} />
+      }} /> */}
+
+      <UserProvider value='meekail'>
+        <ComponentC />
+      </UserProvider>
 
     </div>
   );
