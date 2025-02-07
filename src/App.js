@@ -1,21 +1,25 @@
 // import logo from './logo.svg';
 import './App.css';
-import ClickCounter from './components/ClickCounter';
-import ClickTwoCounter from './components/ClickTwoCounter';
-import ComponentC from './components/ComponentC';
-import DemoFragment from './components/DemoFragment';
-import FormControll from './components/FormControll';
-import HooksCounter from './components/HooksCounter';
-import HooksCounterThree from './components/HooksCounterThree';
-import HooksCounterTwo from './components/HooksCounterTwo';
-import HoverCounter from './components/HoverCounter';
-import HoverTwoCounter from './components/HoverTwoCounter';
-import PortalDemo from './components/PortalDemo';
-import PropsCounter from './components/PropsCounter';
-import PureParent from './components/PureParent';
-import Table from './components/Table';
-import User from './components/User';
-import { UserProvider } from './components/UserContext';
+import HooksMouse from './components/HooksMouse';
+import IintervalCounter from './components/IintervalCounter';
+import MouseContainer from './components/MouseContainer';
+// import ClickCounter from './components/ClickCounter';
+// import ClickTwoCounter from './components/ClickTwoCounter';
+// import ComponentC from './components/ComponentC';
+// import DemoFragment from './components/DemoFragment';
+// import FormControll from './components/FormControll';
+// import HooksCounter from './components/HooksCounter';
+// import HooksCounterThree from './components/HooksCounterThree';
+// import HooksCounterTwo from './components/HooksCounterTwo';
+// import HoverCounter from './components/HoverCounter';
+// import HoverTwoCounter from './components/HoverTwoCounter';
+// import PortalDemo from './components/PortalDemo';
+// import PropsCounter from './components/PropsCounter';
+// import PureParent from './components/PureParent';
+// import Table from './components/Table';
+import UseEffect from './components/UseEffect';
+// import User from './components/User';
+// import { UserProvider } from './components/UserContext';
 // import NamList from './components/NamList';
 // import UserGreeting from './components/UserGreeting';
 // import ParentCompnent from './components/ParentCompnent';
@@ -84,7 +88,12 @@ function App() {
       {/* <HooksCounter /> */}
       {/* <HooksCounterTwo /> */}
 
-      <HooksCounterThree />
+      {/* <HooksCounterThree /> */}
+      {/* <UseEffect /> */}
+
+      {/* <HooksMouse /> */}
+      {/* <MouseContainer /> */}
+      <IintervalCounter />
 
     </div>
   );
