@@ -1,12 +1,18 @@
 import React from 'react'
-import { UserConsumer } from './UserContext'
+import { UserConsumer,ChannleConsumer } from './UserContext'
 import User from './User'
 
 function ComponentF() {
   return (
       <UserConsumer>
         {(username)=>{
-            return <h1>hello {username}</h1>
+            return (
+              <ChannleConsumer>
+                {(channel)=>{
+                  return <h1>{username} - {channel}</h1>
+                }}
+              </ChannleConsumer>
+            )
         }}
       </UserConsumer>
   )
