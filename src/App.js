@@ -1,12 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
-import DataFetching from './components/DataFetching';
-import HooksMouse from './components/HooksMouse';
-import IintervalCounter from './components/IintervalCounter';
-import MouseContainer from './components/MouseContainer';
+// import DataFetching from './components/DataFetching';
+// import HooksMouse from './components/HooksMouse';
+// import IintervalCounter from './components/IintervalCounter';
+// import MouseContainer from './components/MouseContainer';
 // import ClickCounter from './components/ClickCounter';
 // import ClickTwoCounter from './components/ClickTwoCounter';
-import ComponentC from './components/ComponentC';
+// import ComponentC from './components/ComponentC';
 // import DemoFragment from './components/DemoFragment';
 // import FormControll from './components/FormControll';
 // import HooksCounter from './components/HooksCounter';
@@ -18,9 +18,10 @@ import ComponentC from './components/ComponentC';
 // import PropsCounter from './components/PropsCounter';
 // import PureParent from './components/PureParent';
 // import Table from './components/Table';
-import UseEffect from './components/UseEffect';
+// import UseEffect from './components/UseEffect';
 // import User from './components/User';
-import { UserProvider,ChannleProvider } from './components/UserContext';
+// import { UserProvider,ChannleProvider } from './components/UserContext';
+import ReducerCounter from './components/ReducerCounter';
 // import NamList from './components/NamList';
 // import UserGreeting from './components/UserGreeting';
 // import ParentCompnent from './components/ParentCompnent';
@@ -82,11 +83,11 @@ function App() {
         return <HoverTwoCounter count={count} incrementCounter={incrementCounter} />
       }} /> */}
 
-      <UserProvider value='meekail'>
+      {/* <UserProvider value='meekail'>
         <ChannleProvider value='aslam'>
           <ComponentC />
         </ChannleProvider>
-      </UserProvider>
+      </UserProvider> */}
 
       {/* <HooksCounter /> */}
       {/* <HooksCounterTwo /> */}
@@ -99,6 +100,8 @@ function App() {
       {/* <IintervalCounter /> */}
 
       {/* <DataFetching /> */}
+
+      <ReducerCounter />
 
     </div>
   );
