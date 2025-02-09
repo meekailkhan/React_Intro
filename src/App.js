@@ -1,5 +1,11 @@
 // import logo from './logo.svg';
+import React,{useReducer} from 'react';
 import './App.css';
+import ReducerA from './components/ReducerA';
+import ReducerB from './components/ReducerB';
+import ReducerC from './components/ReducerC';
+// import ReduceThreeCounter from './components/ReduceThreeCounter';
+// import ReducerTwoCounter from './components/ReduceTwoCounter ';
 // import DataFetching from './components/DataFetching';
 // import HooksMouse from './components/HooksMouse';
 // import IintervalCounter from './components/IintervalCounter';
@@ -21,7 +27,7 @@ import './App.css';
 // import UseEffect from './components/UseEffect';
 // import User from './components/User';
 // import { UserProvider,ChannleProvider } from './components/UserContext';
-import ReducerCounter from './components/ReducerCounter';
+// import ReducerCounter from './components/ReducerCounter';
 // import NamList from './components/NamList';
 // import UserGreeting from './components/UserGreeting';
 // import ParentCompnent from './components/ParentCompnent';
@@ -38,8 +44,26 @@ import ReducerCounter from './components/ReducerCounter';
 // import style from './myStyle.module.css'
 // const {success,font_xl} = style
 
+const initialValue = 0;
+
+const reducer = (state, action) => {
+  switch (action) {
+    case 'increment':
+      return state + 1;
+    case 'decrement':
+      return state - 1;
+    case 'reset':
+      return initialValue;
+    default:
+      return state
+  }
+}
+
+export const CounterContext = React.createContext()
+
 
 function App() {
+  const [count,dispatch] = useReducer(reducer,initialValue)
   return (
     <div className="App">
       {/* <Greet/> */}
@@ -74,7 +98,7 @@ function App() {
       {/* <ClickTwoCounter />
       <HoverTwoCounter />
       <User isLoggedIn={(isLoggedIn)=> isLoggedIn ? 'meekail' : 'guest'}/> */}
-{/*       
+      {/*       
       <PropsCounter render={(count, incrementCounter) => {
         return <ClickTwoCounter count={count} incrementCounter={incrementCounter} />
       }} /> */}
@@ -101,7 +125,19 @@ function App() {
 
       {/* <DataFetching /> */}
 
-      <ReducerCounter />
+      {/* <ReducerCounter /> */}
+
+      {/* <ReducerTwoCounter /> */}
+      {/* <ReduceThreeCounter /> */}
+      
+      <div>count - {count}</div>
+      <CounterContext.Provider value={{counter:count,countDispatch:dispatch}}>
+
+        <ReducerA />
+        <ReducerB />
+        <ReducerC />
+      </CounterContext.Provider>
+
 
     </div>
   );
