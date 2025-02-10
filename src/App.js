@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
 import React,{useReducer} from 'react';
 import './App.css';
-import ReducerA from './components/ReducerA';
-import ReducerB from './components/ReducerB';
-import ReducerC from './components/ReducerC';
+// import ReducerA from './components/ReducerA';
+// import ReducerB from './components/ReducerB';
+// import ReducerC from './components/ReducerC';
+import ReduceDataFetching from './components/ReduceDataFetching';
 // import ReduceThreeCounter from './components/ReduceThreeCounter';
 // import ReducerTwoCounter from './components/ReduceTwoCounter ';
 // import DataFetching from './components/DataFetching';
@@ -44,26 +45,26 @@ import ReducerC from './components/ReducerC';
 // import style from './myStyle.module.css'
 // const {success,font_xl} = style
 
-const initialValue = 0;
+// const initialValue = 0;
 
-const reducer = (state, action) => {
-  switch (action) {
-    case 'increment':
-      return state + 1;
-    case 'decrement':
-      return state - 1;
-    case 'reset':
-      return initialValue;
-    default:
-      return state
-  }
-}
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case 'increment':
+//       return state + 1;
+//     case 'decrement':
+//       return state - 1;
+//     case 'reset':
+//       return initialValue;
+//     default:
+//       return state
+//   }
+// }
 
-export const CounterContext = React.createContext()
+// export const CounterContext = React.createContext()
 
 
 function App() {
-  const [count,dispatch] = useReducer(reducer,initialValue)
+  // const [count,dispatch] = useReducer(reducer,initialValue)
   return (
     <div className="App">
       {/* <Greet/> */}
@@ -130,15 +131,15 @@ function App() {
       {/* <ReducerTwoCounter /> */}
       {/* <ReduceThreeCounter /> */}
       
-      <div>count - {count}</div>
+      {/* <div>count - {count}</div>
       <CounterContext.Provider value={{counter:count,countDispatch:dispatch}}>
 
         <ReducerA />
         <ReducerB />
         <ReducerC />
-      </CounterContext.Provider>
+      </CounterContext.Provider> */}
 
-
+      <ReduceDataFetching />
     </div>
   );
 }
