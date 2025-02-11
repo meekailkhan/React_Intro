@@ -1,10 +1,11 @@
 // import logo from './logo.svg';
 import React,{useReducer} from 'react';
 import './App.css';
+import Reduce2DataFetching from './components/Reduce2DataFetching';
 // import ReducerA from './components/ReducerA';
 // import ReducerB from './components/ReducerB';
 // import ReducerC from './components/ReducerC';
-import ReduceDataFetching from './components/ReduceDataFetching';
+// import ReduceDataFetching from './components/ReduceDataFetching';
 // import ReduceThreeCounter from './components/ReduceThreeCounter';
 // import ReducerTwoCounter from './components/ReduceTwoCounter ';
 // import DataFetching from './components/DataFetching';
@@ -139,7 +140,8 @@ function App() {
         <ReducerC />
       </CounterContext.Provider> */}
 
-      <ReduceDataFetching />
+      {/* <ReduceDataFetching /> */}
+      <Reduce2DataFetching />
     </div>
   );
 }
