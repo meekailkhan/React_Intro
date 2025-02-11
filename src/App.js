@@ -2,6 +2,7 @@
 import React,{useReducer} from 'react';
 import './App.css';
 import Reduce2DataFetching from './components/Reduce2DataFetching';
+import Parent from './components/Parent';
 // import ReducerA from './components/ReducerA';
 // import ReducerB from './components/ReducerB';
 // import ReducerC from './components/ReducerC';
@@ -141,7 +142,8 @@ function App() {
       </CounterContext.Provider> */}
 
       {/* <ReduceDataFetching /> */}
-      <Reduce2DataFetching />
+      {/* <Reduce2DataFetching /> */}
+      <Parent />
     </div>
   );
 }
