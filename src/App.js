@@ -3,6 +3,9 @@ import React,{useReducer} from 'react';
 import './App.css';
 import Reduce2DataFetching from './components/Reduce2DataFetching';
 import Parent from './components/Parent';
+import UseMemoCounter from './components/UseMemoCounter';
+import InputFocus from './components/InputFocus';
+import HookTimer from './components/HookTimer';
 // import ReducerA from './components/ReducerA';
 // import ReducerB from './components/ReducerB';
 // import ReducerC from './components/ReducerC';
@@ -143,7 +146,11 @@ function App() {
 
       {/* <ReduceDataFetching /> */}
       {/* <Reduce2DataFetching /> */}
-      <Parent />
+      {/* <Parent /> */}
+
+      {/* <UseMemoCounter /> */}
+      {/* <InputFocus /> */}
+      <HookTimer />
     </div>
   );
 }
