@@ -6,6 +6,11 @@ import Parent from './components/Parent';
 import UseMemoCounter from './components/UseMemoCounter';
 import InputFocus from './components/InputFocus';
 import HookTimer from './components/HookTimer';
+import DockTitle from './components/DockTitle';
+import DockTitleTwo from './components/DockTitleTwo';
+import CustomCounter from './components/CustomCounter';
+import CustomCounterTwo from './components/CustomCounterTwo';
+import CustomForm from './components/CustomForm';
 // import ReducerA from './components/ReducerA';
 // import ReducerB from './components/ReducerB';
 // import ReducerC from './components/ReducerC';
@@ -150,7 +155,13 @@ function App() {
 
       {/* <UseMemoCounter /> */}
       {/* <InputFocus /> */}
-      <HookTimer />
+      {/* <HookTimer /> */}
+      {/* <DockTitle /> */}
+      {/* <DockTitleTwo /> */}  
+      {/* <CustomCounter />
+      <CustomCounterTwo /> */}
+
+      <CustomForm />
     </div>
   );
 }
