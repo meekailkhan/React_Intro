@@ -2,6 +2,8 @@
 import React,{useReducer} from 'react';
 import './App.css';
 import UseState from './components/useState.js/UseState';
+import ObjectUseState from './components/useState.js/ObjectUseState';
+import ArrayUseState from './components/useState.js/ArrayUseState';
 // import Reduce2DataFetching from './components/Reduce2DataFetching';
 // import Parent from './components/Parent';
 // import UseMemoCounter from './components/UseMemoCounter';
@@ -163,7 +165,9 @@ function App() {
       <CustomCounterTwo /> */}
 
       {/* <CustomForm /> */}
-      <UseState />
+      {/* <UseState /> */}
+      {/* <ObjectUseState /> */}
+      <ArrayUseState />
       
     </div>
   );
