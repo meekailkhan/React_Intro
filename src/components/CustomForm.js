@@ -28,5 +28,5 @@ function CustomForm() {
     </form>
   )
 }
-console.log('hello')
+
 export default CustomForm
