@@ -1,16 +1,17 @@
 // import logo from './logo.svg';
 import React,{useReducer} from 'react';
 import './App.css';
-import Reduce2DataFetching from './components/Reduce2DataFetching';
-import Parent from './components/Parent';
-import UseMemoCounter from './components/UseMemoCounter';
-import InputFocus from './components/InputFocus';
-import HookTimer from './components/HookTimer';
-import DockTitle from './components/DockTitle';
-import DockTitleTwo from './components/DockTitleTwo';
-import CustomCounter from './components/CustomCounter';
-import CustomCounterTwo from './components/CustomCounterTwo';
-import CustomForm from './components/CustomForm';
+import UseState from './components/useState.js/UseState';
+// import Reduce2DataFetching from './components/Reduce2DataFetching';
+// import Parent from './components/Parent';
+// import UseMemoCounter from './components/UseMemoCounter';
+// import InputFocus from './components/InputFocus';
+// import HookTimer from './components/HookTimer';
+// import DockTitle from './components/DockTitle';
+// import DockTitleTwo from './components/DockTitleTwo';
+// import CustomCounter from './components/CustomCounter';
+// import CustomCounterTwo from './components/CustomCounterTwo';
+// import CustomForm from './components/CustomForm';
 // import ReducerA from './components/ReducerA';
 // import ReducerB from './components/ReducerB';
 // import ReducerC from './components/ReducerC';
@@ -161,7 +162,9 @@ function App() {
       {/* <CustomCounter />
       <CustomCounterTwo /> */}
 
-      <CustomForm />
+      {/* <CustomForm /> */}
+      <UseState />
+      
     </div>
   );
 }
