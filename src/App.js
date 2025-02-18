@@ -4,6 +4,9 @@ import './App.css';
 import UseState from './components/useState.js/UseState';
 import ObjectUseState from './components/useState.js/ObjectUseState';
 import ArrayUseState from './components/useState.js/ArrayUseState';
+import ParentOne from './optimization/ParentOne';
+import ChildOne from './optimization/ChildOne';
+import GrandParent from './optimization/GrandParent';
 // import Reduce2DataFetching from './components/Reduce2DataFetching';
 // import Parent from './components/Parent';
 // import UseMemoCounter from './components/UseMemoCounter';
@@ -167,8 +170,11 @@ function App() {
       {/* <CustomForm /> */}
       {/* <UseState /> */}
       {/* <ObjectUseState /> */}
-      <ArrayUseState />
-      
+      {/* <ArrayUseState /> */}
+      {/* <ParentOne>
+        <ChildOne/>
+      </ParentOne> */}
+      <GrandParent />
     </div>
   );
 }
