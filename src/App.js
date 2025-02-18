@@ -7,6 +7,7 @@ import ArrayUseState from './components/useState.js/ArrayUseState';
 import ParentOne from './optimization/ParentOne';
 import ChildOne from './optimization/ChildOne';
 import GrandParent from './optimization/GrandParent';
+import ParentTwo from './optimization/ParentTwo';
 // import Reduce2DataFetching from './components/Reduce2DataFetching';
 // import Parent from './components/Parent';
 // import UseMemoCounter from './components/UseMemoCounter';
@@ -174,7 +175,8 @@ function App() {
       {/* <ParentOne>
         <ChildOne/>
       </ParentOne> */}
-      <GrandParent />
+      {/* <GrandParent /> */}
+      <ParentTwo />
     </div>
   );
 }
